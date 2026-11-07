@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>WYGIWYH, the no-budget finance tracker</title>
+  <meta name="description" content="WYGIWYH is a self-hosted, open source finance tracker with multi-currency support and no budgets. Spend this month's money this month.">
+  <meta name="theme-color" content="#fbb700">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="icon" href="assets/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/favicon/android-icon-192x192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <aside class="slip" aria-label="Sponsor">
+    <p>Hosting sponsored by <a href="https://www.simafri.com/en/managed-vps/" rel="sponsored">Simafri</a> (managed VPS)</p>
+    <a class="slip__logo" href="https://www.simafri.com/en/managed-vps/" rel="sponsored" tabindex="-1" aria-hidden="true"><img src="assets/simafri-logo.png" width="426" height="120" alt=""></a>
+  </aside>
+
+  <header class="hero amber">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a class="nav__home" href="#main" aria-label="WYGIWYH home"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" viewBox="0 0 348 98.999996" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><g/><clipPath id="4c1c77f4e0"><path d="M 0 0 L 98.25 0 L 98.25 98.25 L 0 98.25 Z M 0 0 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#4c1c77f4e0)"><path d="M 63.074219 79.550781 L 20.476562 36.953125 L 30.851562 26.582031 L 63.074219 58.808594 L 93.726562 28.15625 C 85.832031 11.507812 68.871094 -0.00390625 49.222656 -0.00390625 C 29.558594 -0.00390625 12.59375 11.523438 4.703125 28.191406 L 45.78125 69.265625 L 35.5 79.550781 L 0.238281 44.289062 C 0.078125 45.914062 -0.0078125 47.558594 -0.0078125 49.222656 C -0.0078125 76.410156 22.035156 98.453125 49.222656 98.453125 C 76.410156 98.453125 98.453125 76.410156 98.453125 49.222656 C 98.453125 47.597656 98.371094 45.992188 98.21875 44.40625 L 63.074219 79.550781 " fill-rule="nonzero"/></g><g><g transform="translate(104.174024, 62.306856)"><g><path d="M 44.65625 -27.40625 L 35.703125 0 L 28.890625 0 L 22.859375 -18.546875 L 16.640625 0 L 9.859375 0 L 0.859375 -27.40625 L 7.4375 -27.40625 L 13.625 -8.140625 L 20.078125 -27.40625 L 25.953125 -27.40625 L 32.21875 -7.984375 L 38.59375 -27.40625 Z M 44.65625 -27.40625 "/></g></g></g><g><g transform="translate(151.376399, 62.306856)"><g><path d="M 16.40625 -9.703125 L 16.40625 0 L 10.0625 0 L 10.0625 -9.78125 L -0.546875 -27.40625 L 6.1875 -27.40625 L 13.5 -15.21875 L 20.828125 -27.40625 L 27.046875 -27.40625 Z M 16.40625 -9.703125 "/></g></g></g><g><g transform="translate(179.517888, 62.306856)"><g><path d="M 21.765625 -14.125 L 27.5625 -14.125 L 27.5625 -3.015625 C 26.070312 -1.890625 24.347656 -1.023438 22.390625 -0.421875 C 20.429688 0.171875 18.460938 0.46875 16.484375 0.46875 C 13.640625 0.46875 11.082031 -0.132812 8.8125 -1.34375 C 6.539062 -2.5625 4.757812 -4.242188 3.46875 -6.390625 C 2.175781 -8.546875 1.53125 -10.984375 1.53125 -13.703125 C 1.53125 -16.410156 2.175781 -18.84375 3.46875 -21 C 4.757812 -23.15625 6.550781 -24.835938 8.84375 -26.046875 C 11.144531 -27.265625 13.726562 -27.875 16.59375 -27.875 C 19 -27.875 21.175781 -27.46875 23.125 -26.65625 C 25.082031 -25.84375 26.726562 -24.664062 28.0625 -23.125 L 24 -19.375 C 22.039062 -21.4375 19.675781 -22.46875 16.90625 -22.46875 C 15.15625 -22.46875 13.601562 -22.101562 12.25 -21.375 C 10.894531 -20.644531 9.835938 -19.613281 9.078125 -18.28125 C 8.328125 -16.945312 7.953125 -15.421875 7.953125 -13.703125 C 7.953125 -12.003906 8.328125 -10.488281 9.078125 -9.15625 C 9.835938 -7.820312 10.890625 -6.785156 12.234375 -6.046875 C 13.578125 -5.304688 15.109375 -4.9375 16.828125 -4.9375 C 18.660156 -4.9375 20.304688 -5.328125 21.765625 -6.109375 Z M 21.765625 -14.125 "/></g></g></g><g><g transform="translate(211.377616, 62.306856)"><g><path d="M 3.25 -27.40625 L 9.59375 -27.40625 L 9.59375 0 L 3.25 0 Z M 3.25 -27.40625 "/></g></g></g><g><g transform="translate(225.898603, 62.306856)"><g><path d="M 44.65625 -27.40625 L 35.703125 0 L 28.890625 0 L 22.859375 -18.546875 L 16.640625 0 L 9.859375 0 L 0.859375 -27.40625 L 7.4375 -27.40625 L 13.625 -8.140625 L 20.078125 -27.40625 L 25.953125 -27.40625 L 32.21875 -7.984375 L 38.59375 -27.40625 Z M 44.65625 -27.40625 "/></g></g></g><g><g transform="translate(273.100981, 62.306856)"><g><path d="M 16.40625 -9.703125 L 16.40625 0 L 10.0625 0 L 10.0625 -9.78125 L -0.546875 -27.40625 L 6.1875 -27.40625 L 13.5 -15.21875 L 20.828125 -27.40625 L 27.046875 -27.40625 Z M 16.40625 -9.703125 "/></g></g></g><g><g transform="translate(301.242474, 62.306856)"><g><path d="M 28.375 -27.40625 L 28.375 0 L 22.03125 0 L 22.03125 -11.234375 L 9.59375 -11.234375 L 9.59375 0 L 3.25 0 L 3.25 -27.40625 L 9.59375 -27.40625 L 9.59375 -16.59375 L 22.03125 -16.59375 L 22.03125 -27.40625 Z M 28.375 -27.40625 "/></g></g></g></svg></a>
+        <ul class="nav__links">
+          <li><a href="#month">The month</a></li>
+          <li><a href="#views">The app</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#start">Try it</a></li>
+        </ul>
+        <a class="nav__gh" href="https://github.com/eitchtee/WYGIWYH" data-gh>GitHub<span class="nav__stars" data-stars><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></svg><span class="num" data-stars-count></span></span></a>
+      </nav>
+
+      <div class="hero__grid" id="main">
+        <h1 class="hero__head">
+          <span class="line" style="--i:0">What you get</span>
+          <span class="line" style="--i:1">is what you have.</span>
+        </h1>
+        <div class="hero__copy">
+          <p class="hero__lede">A self-hosted finance tracker for people who refuse to budget.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#start">Try the live demo</a>
+            <a class="btn btn--quiet" href="#host">Self-host with Docker</a>
+          </div>
+        </div>
+        <figure class="hero__shot" data-rotator>
+          <img class="slide is-on" src="assets/shots/month.webp" width="2880" height="1800" fetchpriority="high" alt="WYGIWYH monthly view: November transactions beside income, expenses and a daily spending allowance">
+          <img class="slide" hidden src="assets/shots/flow.webp" width="2880" height="1800" loading="lazy" alt="Sankey chart of money flowing from accounts into categories">
+          <img class="slide" hidden src="assets/shots/overview.webp" width="2880" height="1800" loading="lazy" alt="Overview table of income and expenses by category and tag">
+          <img class="slide" hidden src="assets/shots/dca.webp" width="2880" height="1800" loading="lazy" alt="Dollar-cost averaging page for a monthly bitcoin buy, with entries, profit and a performance chart">
+          <img class="slide" hidden src="assets/shots/yby.webp" width="2880" height="1800" loading="lazy" alt="Year by year comparison of categories across currencies">
+          <button class="pausekey" type="button" hidden aria-pressed="false" aria-label="Pause the screenshots"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="rule" aria-label="The rule">
+      <div class="container">
+        <blockquote class="rule__quote">
+          <p class="rule__big">Use what you earn this month for this month.</p>
+          <p class="rule__small">What’s left becomes savings, and next month doesn’t get to touch it.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="month" id="month" aria-labelledby="month-head">
+      <aside class="tank" aria-label="Balance for the month">
+        <div class="tank__layer" data-readout>
+          <p class="tank__day"><span data-day>Day 1</span></p>
+          <p class="tank__label">Left this month</p>
+          <p class="tank__figure num" data-left>$0.00</p>
+          <dl class="tank__meta">
+            <div><dt>Daily spending allowance</dt><dd class="num" data-allow>$0.00</dd></div>
+            <div><dt>Savings, untouched</dt><dd class="num" data-save>$12,000.00</dd></div>
+          </dl>
+        </div>
+      </aside>
+
+      <div class="month__rows">
+        <div class="month__intro">
+          <h2 id="month-head">Here’s how a month goes</h2>
+          <p>Money comes in, bills go out, and one number tells you what you can still spend.</p>
+        </div>
+        <ol class="ledger">
+          <li class="entry" data-day="1" data-days="31" data-delta="5000"><span class="entry__day">Day 1</span><span class="entry__name">Salary</span><span class="entry__cat">Recurring, so it shows up on its own</span><span class="entry__amt is-in num">+$5,000.00</span></li>
+          <li class="entry" data-day="3" data-days="31" data-delta="-1800"><span class="entry__day">Day 3</span><span class="entry__name">Rent</span><span class="entry__cat">Recurring too</span><span class="entry__amt is-out num">&minus;$1,800.00</span></li>
+          <li class="entry" data-day="5" data-days="31" data-delta="-100"><span class="entry__day">Day 5</span><span class="entry__name">New laptop</span><span class="entry__cat">Installment 5 of 12, already on the calendar</span><span class="entry__amt is-out num">&minus;$100.00</span></li>
+          <li class="entry" data-day="8" data-days="31" data-delta="-150"><span class="entry__day">Day 8</span><span class="entry__name">Bitcoin buy</span><span class="entry__cat">A quick transaction, tracked by the DCA tool</span><span class="entry__amt is-out num">&minus;$150.00</span></li>
+          <li class="entry" data-day="12" data-days="31" data-delta="-220"><span class="entry__day">Day 12</span><span class="entry__name">Train tickets</span><span class="entry__cat">Paid in euros, converted for you</span><span class="entry__amt is-out num">&minus;€200.00</span></li>
+          <li class="entry" data-day="16" data-days="31" data-delta="-200"><span class="entry__day">Day 16</span><span class="entry__name">Dentist</span><span class="entry__cat">Receipt attached</span><span class="entry__amt is-out num">&minus;$200.00</span></li>
+          <li class="entry" data-day="21" data-days="31" data-delta="-600"><span class="entry__day">Day 21</span><span class="entry__name">Groceries</span><span class="entry__cat">Filed under Food by a rule</span><span class="entry__amt is-out num">&minus;$600.00</span></li>
+          <li class="entry" data-day="28" data-days="31" data-delta="0"><span class="entry__day">Day 28</span><span class="entry__name">Dinner out</span><span class="entry__cat">The card already closed, so this counts next month</span><span class="entry__amt num">&minus;$80.00</span></li>
+          <li class="entry" data-day="31" data-days="31" data-delta="-1930" data-save="1930"><span class="entry__day">Day 31</span><span class="entry__name">Transfer to savings</span><span class="entry__cat">Whatever survived the month</span><span class="entry__amt num">&minus;$1,930.00</span></li>
+          <!-- +5,000 salary minus the 80 dinner carried over from day 28 -->
+          <li class="entry" data-day="1" data-days="30" data-delta="4920"><span class="entry__day">Day 1, next month</span><span class="entry__name">Salary</span><span class="entry__cat">$80 of it already spoken for by that dinner</span><span class="entry__amt is-in num">+$5,000.00</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="views" id="views" aria-labelledby="views-head">
+      <div class="container">
+        <h2 id="views-head">Ask your money a question</h2>
+
+        <div class="tabs" role="tablist" aria-label="Questions" hidden data-tabs>
+          <button role="tab" id="tab-0" aria-controls="view-0" aria-selected="true">What’s left?</button>
+          <button role="tab" id="tab-1" aria-controls="view-1" aria-selected="false" tabindex="-1">How was the year?</button>
+          <button role="tab" id="tab-2" aria-controls="view-2" aria-selected="false" tabindex="-1">What am I worth?</button>
+          <button role="tab" id="tab-3" aria-controls="view-3" aria-selected="false" tabindex="-1">Where did it go?</button>
+          <button role="tab" id="tab-4" aria-controls="view-4" aria-selected="false" tabindex="-1">When did it move?</button>
+          <button role="tab" id="tab-5" aria-controls="view-5" aria-selected="false" tabindex="-1">Was that buy worth it?</button>
+          <span class="tabs__bar" aria-hidden="true"></span>
+        </div>
+
+        <div class="stage">
+          <figure class="view is-on" id="view-0" role="tabpanel" aria-labelledby="tab-0">
+            <img src="assets/shots/all.webp" width="2880" height="1800" loading="lazy" alt="All transactions with late and upcoming items, and totals per currency">
+            <figcaption>Every transaction with what’s late and what’s coming, and totals per currency beside them.</figcaption>
+          </figure>
+          <figure class="view" id="view-1" role="tabpanel" aria-labelledby="tab-1">
+            <img src="assets/shots/year.webp" width="2880" height="1800" loading="lazy" alt="Yearly overview by month and currency">
+            <figcaption>The year by month, per account or per currency.</figcaption>
+          </figure>
+          <figure class="view" id="view-2" role="tabpanel" aria-labelledby="tab-2">
+            <img src="assets/shots/networth.webp" width="2880" height="1800" loading="lazy" alt="Net worth page with balances in dollars, euros, airline miles, an ETF and bitcoin">
+            <figcaption>Dollars, euros, bitcoin, airline miles and an ETF, added up on one page.</figcaption>
+          </figure>
+          <figure class="view" id="view-3" role="tabpanel" aria-labelledby="tab-3">
+            <img src="assets/shots/flow.webp" width="2880" height="1800" loading="lazy" alt="Sankey chart showing money flowing from accounts into categories">
+            <figcaption>Each account’s money, followed all the way into its categories.</figcaption>
+          </figure>
+          <figure class="view" id="view-4" role="tabpanel" aria-labelledby="tab-4">
+            <img src="assets/shots/calendar.webp" width="2880" height="1800" loading="lazy" alt="Calendar for November with markers on the days money moved">
+            <figcaption>The days your money moved, at a glance.</figcaption>
+          </figure>
+          <figure class="view" id="view-5" role="tabpanel" aria-labelledby="tab-5">
+            <img src="assets/shots/dca.webp" width="2880" height="1800" loading="lazy" alt="Dollar-cost averaging page for a monthly bitcoin buy">
+            <figcaption>Your entry price, profit and every recurring buy.</figcaption>
+          </figure>
+        </div>
+
+        <p class="views__more">There’s more in there: category breakdowns, late bills, year by year. <a href="#start">See for yourself</a></p>
+      </div>
+    </section>
+
+    <section class="teach amber" id="rules" aria-labelledby="teach-head">
+      <div class="container">
+        <div class="teach__head">
+          <h2 id="teach-head">A rule for every quirk</h2>
+          <p>Your money has habits no app predicted. Describe yours once, and every transaction that fits gets handled.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Example rules" hidden data-tabs>
+          <button role="tab" id="rtab-0" aria-controls="rule-0" aria-selected="true">Card cutoff</button>
+          <button role="tab" id="rtab-1" aria-controls="rule-1" aria-selected="false" tabindex="-1">Tag your yield</button>
+          <button role="tab" id="rtab-2" aria-controls="rule-2" aria-selected="false" tabindex="-1">Cancellation fee</button>
+          <button role="tab" id="rtab-3" aria-controls="rule-3" aria-selected="false" tabindex="-1">Savings goal</button>
+          <span class="tabs__bar" aria-hidden="true"></span>
+        </div>
+
+        <div class="stage">
+          <div class="view is-on" id="rule-0" role="tabpanel" aria-labelledby="rtab-0">
+            <p class="teach__lead">Your card closes on the 26th, so anything after that counts toward next month.</p>
+            <dl class="teach__rule">
+              <div><dt>If</dt><dd><code>account_name == "My credit card" and date.day &gt;= 26 and reference_date.month == date.month</code></dd></div>
+              <div><dt>Then</dt><dd><span class="teach__set">Set the reference date to</span> <code>(reference_date + relativedelta(months=1)).replace(day=1)</code></dd></div>
+            </dl>
+          </div>
+          <div class="view" id="rule-1" role="tabpanel" aria-labelledby="rtab-1">
+            <p class="teach__lead">Income landing in your investment account tags itself.</p>
+            <dl class="teach__rule">
+              <div><dt>If</dt><dd><code>account_name == "My Investing Account" and is_income</code></dd></div>
+              <div><dt>Then</dt><dd><span class="teach__set">Set the tags to</span> <code>tag_names + ["Yield"]</code></dd></div>
+            </dl>
+          </div>
+          <div class="view" id="rule-2" role="tabpanel" aria-labelledby="rtab-2">
+            <p class="teach__lead">Delete a subscription and its $5 cancellation fee appears as a new expense.</p>
+            <dl class="teach__rule">
+              <div><dt>If</dt><dd><code>description == "Subscription A"</code></dd></div>
+              <div><dt>Then</dt><dd><span class="teach__set">Create an expense, amount</span> <code>Decimal("5.00")</code></dd></div>
+            </dl>
+          </div>
+          <div class="view" id="rule-3" role="tabpanel" aria-labelledby="rtab-3">
+            <p class="teach__lead">Each manual contribution gets noted on this month’s goal transaction.</p>
+            <dl class="teach__rule">
+              <div><dt>If</dt><dd><code>description.startswith("Manual contribution to goal:")</code></dd></div>
+              <div><dt>Then</dt><dd><span class="teach__set">Find “My Savings Goal” and set its notes to</span> <code>my_notes + f"\n- Manual contribution of ${amount} on {date.strftime('%Y-%m-%d')}"</code></dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <p class="teach__foot">Rules are a small subset of Python. They run when a transaction is created, updated or deleted, can change any field, and can add up other transactions with <code>transactions()</code>.</p>
+      </div>
+    </section>
+
+    <section class="more" aria-labelledby="more-head">
+      <div class="container more__grid">
+        <div class="more__side">
+          <h2 id="more-head">Everything my spreadsheet couldn’t do</h2>
+          <figure class="more__phone">
+            <img src="assets/shots/phone.webp" width="1170" height="2532" loading="lazy" alt="WYGIWYH monthly summary on a phone">
+            <figcaption>Install it to your home screen and it opens like an app.</figcaption>
+          </figure>
+        </div>
+        <dl class="more__list">
+          <div><dt>Try a purchase first</dt><dd>Simulate one expense, a recurring bill or an installment plan, and watch your projected balance move.</dd></div>
+          <div><dt>Know your runway</dt><dd>At your 12-month average, how long could you go without income? It tells you, per currency.</dd></div>
+          <div><dt>Invent a currency</dt><dd>Airline miles, ETF shares, reward points. If you can count it, you can track it.</dd></div>
+          <div><dt>Rates that fetch themselves</dt><dd>From CoinGecko, Frankfurter, Twelve Data, Yahoo Finance or FXMacroData.</dd></div>
+          <div><dt>Follow your recurring buys</dt><dd>The dollar-cost averaging tracker keeps your entry price and profit.</dd></div>
+          <div><dt>Import your bank’s mess</dt><dd>CSV, Excel and QIF, mapped with a profile you write once.</dd></div>
+          <div><dt>Share an account</dt><dd>Everyone gets their own login, and shared accounts show up for both of you.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="tongues" id="languages" aria-labelledby="tongues-head">
+      <div class="container tongues__grid">
+        <div class="tongues__board">
+          <ul class="board" data-board aria-hidden="true">
+            <li><span class="flap" data-word="0">Transactions</span></li>
+            <li><span class="flap" data-word="1">Expenses</span></li>
+            <li><span class="flap" data-word="2">Calendar</span></li>
+            <li><span class="flap" data-word="3">Rules</span></li>
+          </ul>
+          <div class="langs" data-langs role="group" aria-label="Show the app’s labels in another language" hidden></div>
+        </div>
+        <div class="tongues__copy">
+          <h2 id="tongues-head">Translated by the people who use it</h2>
+          <p>Those are the app’s real labels, written by its community. French, Dutch and Brazilian Portuguese are finished, and more are on the way.</p>
+          <a class="tongues__cta" href="https://translations.herculino.com/engage/wygiwyh/">Help translate it into yours</a>
+          <button class="pausekey pausekey--text" type="button" hidden aria-pressed="false" aria-label="Pause the languages" data-board-pause><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="start" id="start" aria-label="Get started">
+      <div class="start__demo">
+        <div class="start__inner">
+          <h2>Log in and poke around</h2>
+          <p>It’s a real instance. Anything you add disappears within a day, so break whatever you like.</p>
+          <dl class="creds">
+            <div><dt>E-mail</dt><dd><code>demo@demo.com</code><button class="copy" type="button" data-copy="demo@demo.com" aria-label="Copy e-mail"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg><svg class="i-ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg></button></dd></div>
+            <div><dt>Password</dt><dd><code>wygiwyhdemo</code><button class="copy" type="button" data-copy="wygiwyhdemo" aria-label="Copy password"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg><svg class="i-ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg></button></dd></div>
+          </dl>
+          <a class="btn btn--amber" href="https://wygiwyh-demo.herculino.com/">Open the demo</a>
+        </div>
+      </div>
+      <div class="start__host" id="host">
+        <div class="start__inner">
+          <h2>Then run your own</h2>
+          <p>Your numbers stay in your own Postgres. No account to create, no bank login to hand over, and it’s AGPL-3.0, so it stays that way.</p>
+          <figure class="code">
+            <figcaption><span>Needs <a href="https://docs.docker.com/engine/install/">Docker</a>, or grab it from the Unraid app store</span><button class="copy" type="button" data-copy-from="code-install" aria-label="Copy install commands"><svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg><svg class="i-ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg></button></figcaption>
+<pre><code id="code-install"><span class="c"># Get the files</span>
+curl -o docker-compose.yml https://raw.githubusercontent.com/eitchtee/WYGIWYH/main/docker-compose.prod.yml
+curl -o .env https://raw.githubusercontent.com/eitchtee/WYGIWYH/main/.env.example
+
+<span class="c"># Edit .env, then start</span>
+docker compose up -d
+
+<span class="c"># Create an admin</span>
+docker compose exec -it web python manage.py createsuperuser</code></pre>
+          </figure>
+          <ul class="host__links">
+            <li><a href="https://github.com/eitchtee/WYGIWYH#environment-variables">Environment variables</a></li>
+            <li><a href="https://github.com/eitchtee/WYGIWYH#api-tokens-for-n8n-and-other-automations">API tokens</a></li>
+            <li><a href="https://github.com/ReNewator/MCP-WYGIWYH">MCP server, by IZIme07</a></li>
+            <li><a href="https://github.com/eitchtee/WYGIWYH/wiki">Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot amber">
+    <div class="container">
+      <p class="visually-hidden">WYGIWYH stands for What You Get Is What You Have, pronounced wiggy-wih.</p>
+      <div class="acro" aria-hidden="true">
+        <div><b>W</b><span>What</span></div>
+        <div><b>Y</b><span>You</span></div>
+        <div><b>G</b><span>Get</span></div>
+        <div><b>I</b><span>Is</span></div>
+        <div><b>W</b><span>What</span></div>
+        <div><b>Y</b><span>You</span></div>
+        <div><b>H</b><span>Have</span></div>
+      </div>
+      <div class="foot__row">
+        <p class="foot__say">Say “wiggy-wih”.</p>
+        <ul class="foot__links">
+          <li><a href="https://github.com/eitchtee/WYGIWYH">GitHub</a></li>
+          <li><a href="https://wygiwyh-demo.herculino.com/">Live demo</a></li>
+          <li><a href="https://translations.herculino.com/engage/wygiwyh/">Help translate</a></li>
+          <li><a href="https://github.com/eitchtee/WYGIWYH/blob/main/LICENSE">AGPL-3.0 license</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
