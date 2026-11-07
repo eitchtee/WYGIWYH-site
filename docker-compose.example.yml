@@ -1,0 +1,10 @@
+# Copy to docker-compose.yml, then: docker compose up -d --build
+services:
+  site:
+    build: .
+    # Or run a pushed image instead of building here:
+    # image: registry.example.com/wygiwyh-site:latest
+    container_name: wygiwyh-site
+    ports:
+      - "${PORT:-8080}:8080"
+    restart: unless-stopped
